@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="stlyes.css">
+</head>
+
+<body>
+<h1>Contact Manager</h1>
+<form id="contact-form">
+    <input type="text" name="name" id="name" placeholder="Name">
+    <input type="text" name="phone" id="phone" placeholder="Phone">
+    <input type="text" name="email" id="email" placeholder="Email">
+    <input type="text" name="other" id="other" placeholder="Other">
+    <input type="hidden" name="contact-index" id="contact-index" value="">
+    <input type="submit" value="Add">
+    <button type="button" id="btn-save" style="display:none;">Save</button>
+</form>
+
+<form id="contact-search">
+    <input type="text" id="search" placeholder="Search">
+    <button type="button" id="btn-search">Search</button>
+</form>
+
+<table id="contact-list">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Other</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="contact-list-body">
+
+    </tbody>
+</table>
+<script src="my1.js"></script>
+</body>
+</html>
